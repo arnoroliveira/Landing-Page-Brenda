@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato e saiba mais dos meus serviços.">
+    <title>Brenda Peruchi - Transformando Sua Presença Digital em Resultados Reais</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <img src="imagens/brenda oliveira.png" alt="Logo" class="cabecalho-logo">
+        <nav class="cabecalho-menu">
+            <a href="quemsoueu.html" class="cabecalho-menu-item">Quem sou Eu?</a>
+            <a href="feedback.html" class="cabecalho-menu-item">Feedback</a>
+            <a href="marketing.html" class="cabecalho-menu-item">Marketing</a>
+            <a href="servicos.html" class="cabecalho-menu-item">Serviços</a>
+            <button class="dropdown-btn" onclick="toggleDropdown()">Menu</button>
+            <ul class="dropdown-content">
+                <li class="cabecalho-menu-item"><a href="quemsoueu.html">Quem sou Eu?</a></li>
+                <li class="cabecalho-menu-item"><a href="feedback.html">Feedback</a></li>
+                <li class="cabecalho-menu-item"><a href="marketing.html">Marketing</a></li>
+                <li class="cabecalho-menu-item"><a href="servicos.html">Serviços</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="conteudo-home">
+            <div class="conteudo-home-escrito">
+                <h1 class="conteudo-home-titulo">Brenda Peruchi</h1>
+                <h2 class="conteudo-home-subtitulo">Transformando Sua Presença Digital em Resultados Reais</h2>
+                <div class="conteudo-home-botao-dropdown"><button class="conteudo-home-botao">Entre em Contato</button></div>
+            </div>
+            <img src="imagens/brenda1.png" alt="Foto Brenda 1" class="conteudo-home-foto1">
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <p class="rodape-escrito">@ 2025. Brenda Peruchi. Todos os direitos reservados.</p>
+        <p class="rodape-escrito">Desenvolvido por Pedro Arnor</p>
+        <div>
+            <a href="home.html" class="rodape-item">Home</a>
+            <a href="quemsoueu.html" class="rodape-item">Sobre</a>
+            <a href="" class="rodape-item">Contato</a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleDropdown() {
+            document.querySelector('.dropdown-content').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

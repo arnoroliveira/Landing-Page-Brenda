@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+@import url("https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  background: /* Gradient in RGBA */ linear-gradient(
+    to right,
+    rgba(241, 93, 127, 1) 0%,
+    rgba(222, 154, 165, 1) 24.52%,
+    rgba(222, 154, 165, 1) 49.04%,
+    rgba(198, 87, 106, 1) 74.52%,
+    rgba(198, 87, 106, 1) 100%
+  );
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3vh;
+  background-color: rgba(222, 154, 165, 1);
+}
+
+.cabecalho-logo {
+  height: 10vh;
+}
+
+.cabecalho-menu {
+  display: flex;
+  gap: 7vh;
+}
+
+.cabecalho-menu-item {
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: black;
+}
+
+/* Dropdown Button and Content - Hidden by default */
+.dropdown-btn,
+.dropdown-content {
+  display: none;
+}
+
+.conteudo-home {
+  border-top: 0.1vh solid #fff2e7;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 3vh;
+}
+
+.conteudo-home-titulo {
+  padding-left: 10vh;
+  font-family: "Petit Formal Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 6vh;
+}
+
+.conteudo-home-subtitulo {
+  display: flex;
+  justify-content: center;
+  padding-left: 10vh;
+  font-family: "Petit Formal Script", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3vh;
+}
+
+.conteudo-home-botao {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  margin-top: 12vh;
+  margin-left: 55vh;
+  margin-bottom: 0;
+  padding: 2vh;
+}
+
+.conteudo-home-foto1 {
+  height: 70vh;
+  width: 70vh;
+}
+
+.rodape {
+  border-top: 0.05vh solid #fff2e7;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3vh;
+
+  font-family: "Open Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  color: black;
+}
+
+.rodape-item {
+  flex: 1;
+  text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 900px) {
+  .cabecalho {
+    flex-direction: column;
+    padding: 2vh;
+  }
+
+  .cabecalho-logo {
+    height: 8vh;
+  }
+
+  .cabecalho-menu {
+    flex-direction: column;
+    gap: 3vh;
+    position: relative;
+  }
+
+  .cabecalho-menu a {
+    display: none; /* Hide regular menu items on small screens */
+  }
+
+  .dropdown-btn {
+    display: block;
+    background-color: rgba(198, 87, 106, 1);
+    color: white;
+    padding: 1vh;
+    border: none;
+    cursor: pointer;
+  }
+
+  .dropdown-content {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .dropdown-content .cabecalho-menu-item {
+    display: block;
+    padding: 1vh;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .dropdown-content .cabecalho-menu-item a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-content.show {
+    display: flex; /* Show the dropdown menu when the class 'show' is added */
+  }
+
+  .conteudo-home {
+    flex-direction: column;
+    align-items: center;
+    padding: 2vh;
+  }
+
+  .conteudo-home-titulo {
+    padding-left: 0;
+    font-size: 4vh;
+    text-align: center;
+  }
+
+  .conteudo-home-subtitulo {
+    padding-left: 0;
+    font-size: 2.5vh;
+    text-align: center;
+  }
+
+  .conteudo-home-botao {
+    margin-top: 6vh;
+    margin-left: 29vh;
+    align-items: center;
+    width: auto;
+  }
+
+  .conteudo-home-foto1 {
+    height: auto;
+    width: 80vh;
+  }
+
+  .rodape {
+    padding-left: 0;
+    padding: 2vh;
+  }
+
+  .rodape-item {
+    flex: none;
+    width: 100%;
+  }
+}
+
+@keyframes anima {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transforme: scale(1.05);
+  }
+}
+
+conteudo-home-botao:hover {
+}
